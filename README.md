@@ -17,14 +17,15 @@ This repository represents my hands-on journey to mastering Databricks as a **de
 - Security, governance, and Unity Catalog implementation
 
 ## Repository Structure
-foundations/ # Spark, Delta, SQL → PySpark
-greenfield/ # Azure / AWS / GCP setup & networking
-ingestion-patterns/ # Batch, streaming, CDC
-migration/ # Oracle, Hadoop, Snowflake migrations
-costing/ # DBU modeling & proposals
-security/ # Unity Catalog, RBAC, masking
-catalog-design/ # Catalog & schema standards
-TRACKER.md # Execution checklist
+
+- foundations/ # Spark, Delta, SQL → PySpark
+- greenfield/ # Azure / AWS / GCP setup & networking
+- ingestion-patterns/ # Batch, streaming, CDC
+- migration/ # Oracle, Hadoop, Snowflake migrations
+- costing/ # DBU modeling & proposals
+- security/ # Unity Catalog, RBAC, masking
+- catalog-design/ # Catalog & schema standards
+- TRACKER.md # Execution checklist
 
 ## How to use this repository
 - Each folder contains **architecture notes and hands-on artifacts**
