@@ -1,0 +1,14 @@
+resources:
+  pipelines:
+    customer_lakeflow_pipeline:
+      name: customer-lakeflow-cdc-scd-file
+      target: learning_lab_catalog
+      channel: CURRENT
+      libraries:
+        - file:
+            path: ../src/pipelines/customer_pipeline.py
+      configuration:
+        pipeline.mode: continuous
+# pipeline.mode: continuous - This setting configures the pipeline to run continuously, processing data as it arrives.
+# channel: CURRENT - This specifies that the pipeline should use the current channel for data processing.
+# pipeline.mode: triggered - This setting would configure the pipeline to run only when manually triggered or scheduled.

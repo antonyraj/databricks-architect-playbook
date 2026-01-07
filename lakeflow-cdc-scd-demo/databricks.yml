@@ -1,0 +1,12 @@
+bundle:
+  name: lakeflow-cdc-scd-demo
+
+include:
+  - resources/*.yml
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://adb-7488500312027058.18.azuredatabricks.net/
