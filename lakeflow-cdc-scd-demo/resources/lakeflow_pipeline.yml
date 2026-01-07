@@ -1,12 +1,13 @@
 resources:
   pipelines:
     customer_lakeflow_pipeline:
-      name: customer-lakeflow-cdc-scd-file
-      target: learning_lab_catalog
+      name: customer-lakeflow-cdc-scd-sql
+      catalog: learning_lab_catalog
+      target: asset_bundle_sdp
       channel: CURRENT
       libraries:
         - file:
-            path: ../src/pipelines/customer_pipeline.py
+            path: ../src/pipelines/customer_pipeline_sql.py
       configuration:
         pipeline.mode: continuous
 # pipeline.mode: continuous - This setting configures the pipeline to run continuously, processing data as it arrives.
